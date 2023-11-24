@@ -6,7 +6,7 @@
 	--dark-color: #1F1F1F;
 	--active-color: #E23221;
 	--primary-font: 'Pridi', serif;
-	--font-color:  rgba(255,255,255,0.8);
+	--font-color:  rgba(0, 0, 0, 0.8);
 }
 
 *{
@@ -22,11 +22,14 @@
 html, body {height:100%;}
 
 body{
-	background: var(--dark-color);
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
 	font-family: var(--primary-font);
 	text-decoration: none;
 	color: var(--font-color);
 	margin: 0 20px;	
+}
+.txt{
+text-align: center;
 }
 
 .content{
@@ -39,6 +42,7 @@ body{
 	padding-bottom: 3rem;
 	
 }
+
 
 a{
 	text-decoration: none;
@@ -207,6 +211,7 @@ textarea{
 	display: flex;
 	justify-content: space-between;	
 	margin-top: 2rem;
+	align-items: center;
 }
 
 button.btn{

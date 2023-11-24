@@ -8,19 +8,22 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Cadastrar tarefa</h1>
+    <div class="txt">
+        <h1>Registre sua Leitura</h1>
+    </div>
+    
    <div class="content">
     <form action="" method="post" th:object="${task}">
 
-    <label type="txt">Título</label>
+    <label type="txt">Título do Livro</label>
     <input type="text" th:field="*{title}"> 
     <span th:errors="*{title}"></span>
 
-    <label for="description">Descrição</label>
+    <label for="description">Resenha do Livro</label>
     <textarea th:field="*{description}" ></textarea>
     <span th:errors="*{description}"></span>
 
-    <label for="score">Pontos</label>
+    <label for="score">Nota para a leitura</label>
     <input type="number" th:field="*{score}">
     <span th:errors="*{score}"></span>
 
@@ -30,7 +33,7 @@
 
     </div>
 
-    <input type="date"></input>
+    
 </form>
 </div>
 </body>
